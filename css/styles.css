@@ -70,8 +70,8 @@ p {
 }
 .header .container {
 	flex-direction: row;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 24px;
+	padding-bottom: 25px;
 }
 .nav {
 	display: flex;
