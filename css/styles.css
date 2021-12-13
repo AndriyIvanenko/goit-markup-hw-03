@@ -23,11 +23,17 @@ p {
 	flex-direction: column;
 	margin: auto;
 	width: 1200px;
-	padding: 94px 15px;
+	padding: 0 15px;
+}
+.section {
+	padding: 94px 0;
 }
 
 /* ------------------------header------------------------- */
 
+.header {
+	padding: 24px 0 25px 0;
+}
 .logo {
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -41,14 +47,12 @@ p {
 	color: #000;
 
 	text-decoration: none;
-	align-self: center;
 }
 .logo > .logo-accent {
 	color: var(--accent-color);
 }
-
-.nav-link,
-.contact-link {
+.header .nav-link,
+.header .contact-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -58,38 +62,37 @@ p {
 
 	text-decoration: none;
 }
-.contact-link {
+.header .contact-link {
 	color: var(--secodary-text-color);
 }
-.nav-link:hover,
-.contact-link:hover,
-.nav-link:focus,
-.contact-link:focus {
+.header .nav-link:hover,
+.header .contact-link:hover,
+.header .nav-link:focus,
+.header .contact-link:focus {
 	color: var(--accent-color);
 	outline: none;
 }
+
 .header .container {
 	flex-direction: row;
-	padding-top: 24px;
-	padding-bottom: 25px;
 }
-.nav {
+.header .nav {
 	display: flex;
 }
-.nav-list,
+.header .nav-list,
 .header .contacts-list {
 	display: flex;
 }
-.nav-list {
+.header .nav-list {
 	margin-left: 93px;
 	align-self: center;
 }
-.contacts-list {
+.header .contacts-list {
 	margin-left: auto;
 	align-self: center;
 }
-.nav-item:not(:first-child),
-.contact-item:not(:first-child) {
+.header .nav-item:not(:first-child),
+.header .contact-item:not(:first-child) {
 	margin-left: 50px;
 }
 .header {
@@ -100,10 +103,7 @@ p {
 
 .hero {
 	background-color: var(--background-color);
-}
-.hero .container {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding: 200px 0;
 }
 .hero .main-header {
 	font-weight: 900;
@@ -141,12 +141,11 @@ p {
 
 /* ---------------------------featires-------------------------- */
 
+.features {
+	padding-bottom: 0;
+}
 .features .second-header {
 	display: none;
-}
-.features .container {
-	display: flex;
-	padding-bottom: 0;
 }
 .features .third-header {
 	font-weight: 700;
@@ -162,13 +161,13 @@ p {
 
 	color: var(--secodary-text-color);
 }
-.features-list {
+.features .features-list {
 	display: flex;
 }
-.feature-item {
+.features .feature-item {
 	width: 270px;
 }
-.feature-item p {
+.features .feature-item .text {
 	margin-top: 10px;
 }
 .feature-item:not(:first-child) {
@@ -187,13 +186,11 @@ p {
 .about img {
 	display: block;
 }
-.about-list {
+.about .about-list {
 	display: flex;
-}
-.about-item {
 	margin-top: 50px;
 }
-.about-item:not(:first-child) {
+.about .about-item:not(:first-child) {
 	margin-left: 30px;
 }
 
@@ -222,24 +219,25 @@ p {
 
 	color: var(--secodary-text-color);
 }
-.team-list {
+.team .team-list {
 	display: flex;
-}
-.team-item {
 	margin-top: 50px;
+}
+.team .team-item {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:first-child) {
 	margin-left: 30px;
 }
-.team-item h3 {
-	margin-top: 30px;
+.team .team-item-description {
+	padding: 30px 0;
+}
+.team .team-item .third-header {
 	text-align: center;
 }
-.team-item p {
+.team .team-item .text {
 	margin-top: 10px;
-	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -268,7 +266,6 @@ p {
 .portfolio .buttons-list {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
 }
 .portfolio .buttons-item:not(:first-child) {
 	margin-left: 8px;
@@ -279,14 +276,14 @@ p {
 	color: #fff;
 	outline: none;
 }
+.portfolio .works-item-description {
+	padding: 20px 0 20px 24px;
+}
 .portfolio .second-header {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-
-	margin-top: 20px;
-	margin-left: 24px;
 }
 .portfolio .text {
 	font-size: 16px;
@@ -296,16 +293,15 @@ p {
 	color: var(--secodary-text-color);
 
 	margin-top: 4px;
-	margin-left: 24px;
 }
 .portfolio .works-list-item {
-	padding-bottom: 20px;
 	border: 1px solid #eee;
 	width: 370px;
 }
 .portfolio .works-list {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 50px;
 }
 .portfolio .works-list-item:nth-child(n + 4) {
 	margin-top: 30px;
@@ -321,10 +317,7 @@ p {
 
 .footer {
 	background-color: var(--background-color);
-}
-footer .container {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 0;
 }
 .footer .logo-text {
 	color: #fff;
